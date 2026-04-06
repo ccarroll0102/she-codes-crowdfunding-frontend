@@ -67,9 +67,12 @@ function HomePage() {
 
             <div id="features">
                 <p className="caption">Featured Fundraisers</p>
-                <h2 className="h2">Help These Kids Learn to Swim</h2>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
+                    <h2 className="h2">Help These Kids Learn to Swim</h2>
+                    <Link to="/fundraisers"><button className="btn-tertiary">View more</button></Link>
+                </div>
                 <div id="fundraiser-list">
-                    {fundraisers.map((fundraiserData, key) => {
+                    {fundraisers.slice(0, 3).map((fundraiserData, key) => {
                         return <FundraiserCard key={key} fundraiserData={fundraiserData} index={key} />;
                     })}
                 </div>

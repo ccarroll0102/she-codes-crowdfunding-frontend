@@ -26,6 +26,7 @@ function FundraiserPage() {
                <div id="fundraiser-pills">
                    <span className="pill pillText">Created: {new Date(fundraiser.date_created).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}</span>
                    <span className="pill pillText">{`Status: ${fundraiser.is_open ? "Open" : "Closed"}`}</span>
+                   <span className="pill pillText">Goal: ${fundraiser.goal}</span>
                </div>
                </div>
                <div id="fundraiser-body">
@@ -36,7 +37,7 @@ function FundraiserPage() {
                        return (
                            <div className="pledge-card" key={key}>
                                <div className="pledge-card-left">
-                                   <p className="pledge-supporter">{pledgeData.supporter}</p>
+                                   <p className="pledge-supporter">{pledgeData.anonymous ? "Anonymous" : pledgeData.supporter}</p>
                                    {pledgeData.comment && <p className="pledge-comment">{pledgeData.comment}</p>}
                                    {pledgeData.date_created && <p className="pledge-date">{new Date(pledgeData.date_created).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}</p>}
                                </div>

@@ -9,7 +9,7 @@ body {
     font-family: 'Nunito Sans', sans-serif;
   }
 
-.btn-primary {      
+.btn-primary {
   padding: 8px 12px;
   border-radius: 999px;
   font-family: 'Nunito Sans', sans-serif;
@@ -17,7 +17,11 @@ body {
   background-color: #FC494D;
   color: white;
   border: none;
+  transition: background-color 0.2s;
+}
 
+.btn-primary:hover {
+  background-color: #e03a3e;
 }                                                                         
   
 .btn-secondary {                                                            
@@ -31,9 +35,25 @@ body {
   transition: background-color 0.2s, color 0.2s;
 }
 
-.btn-secondary:hover {                                   
+.btn-secondary:hover {
   background-color: white;
-  color: #008CD5;                                                       
+  color: #008CD5;
+}
+
+.btn-tertiary {
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  background-color: white;
+  color: #008CD5;
+  border: 1px solid white;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-tertiary:hover {
+  background-color: #008CD5;
+  color: white;
 }
 
 .pill {

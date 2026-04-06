@@ -7,7 +7,7 @@ function FundraisersPage() {
 
     return (
         <>
-            <div id="fundraisers-page">
+            <div id="fundraisers-page" style={{ padding: "60px 120px" }}>
                 <h2 className="h2">All Fundraisers</h2>
                 <div id="fundraiser-list">
                     {fundraisers.map((fundraiserData, key) => (

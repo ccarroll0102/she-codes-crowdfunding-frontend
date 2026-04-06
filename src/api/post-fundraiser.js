@@ -1,8 +1,12 @@
   async function postFundraiser(fundraiserData, token) {
     const url =                                            
   `${import.meta.env.VITE_API_URL}/fundraisers/`;
+    const dataWithDefaults = {
+      image: "https://via.placeholder.com/400",
+      ...fundraiserData,
+    };
     const body = new FormData();
-    Object.entries(fundraiserData).forEach(([key, value]) => {
+    Object.entries(dataWithDefaults).forEach(([key, value]) => {
       if (value !== undefined && value !== "") body.append(key, value);
     });
 

@@ -10,7 +10,7 @@ function CreatePledgeForm({ fundraiserId, onPledgeCreated }) {
         amount: "",
         comment: "",
         anonymous: false,
-        fundraiser: fundraiserId
+        fundraiser: Number(fundraiserId)
     });
 
     const presetAmounts = [25, 50, 75, 100];
@@ -26,7 +26,9 @@ function CreatePledgeForm({ fundraiserId, onPledgeCreated }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        postPledge(formData, auth.token).then(() => onPledgeCreated());
+        postPledge(formData, auth.token)
+            .then(() => onPledgeCreated())
+            .catch((err) => alert(err.message));
     };
 
     if (!auth.token) {
