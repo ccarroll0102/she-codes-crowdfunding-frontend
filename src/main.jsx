@@ -1,4 +1,5 @@
 import React from "react";
+import './index.css'
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -8,7 +9,11 @@ import LoginPage from "./pages/LoginPage.jsx";
 import SignUpPage from "./pages/SignUpPage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import ContactUsPage from "./pages/ContactUsPage.jsx";
+import FundraisersPage from "./pages/FundraisersPage.jsx";
+import CreateFundraiserPage from "./pages/CreateFundraiserPage.jsx";
+
 import NavBar from "./components/NavBar.jsx";
+import { AuthProvider } from "./components/AuthProvider.jsx";
 
  
 const router = createBrowserRouter([
@@ -21,6 +26,8 @@ const router = createBrowserRouter([
            { path: "/signup", element: <SignUpPage /> },
            { path: "/about", element: <AboutPage /> },
            { path: "/contact", element: <ContactUsPage /> },
+           { path: "/fundraisers", element: <FundraisersPage /> },
+           { path: "/create", element: <CreateFundraiserPage /> },
            { path: "/fundraiser/:id", element: <FundraiserPage /> },
        ],
    },
@@ -28,7 +35,8 @@ const router = createBrowserRouter([
 
  ReactDOM.createRoot(document.getElementById("root")).render(
    <React.StrictMode>
-      {/* Here we wrap our app in the router provider so they render */}
-      <RouterProvider router={router} />
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
    </React.StrictMode>
  );

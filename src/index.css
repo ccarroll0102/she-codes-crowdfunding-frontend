@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+.btn-primary {      
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  background-color: #FC494D;
+  color: white;
+  border: none;
+
+}                                                                         
+  
+.btn-secondary {                                                            
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;                                                         
+  border: 1px solid white;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-secondary:hover {                                   
+  background-color: white;
+  color: #008CD5;                                                       
+}
+
+.pill {
+    background-color: rgba(255, 255, 255, 0.903);                                                                                 
+    border-radius: 999px;                                                 
+    padding: 4px 16px;                                                    
+    display: inline-block;
+    margin-bottom: 16px;
+}   
+
+/* Text Styling */
+
+h1 {
+      font-size: 2.5rem;                                                    
+      font-weight: 700;
+      padding-bottom: 8px;
+
+  }                                                                         
+   
+  h2 {                                                                      
+      font-size: 2rem;
+      font-weight: 700;
+      padding-bottom: 8px;
+  }
+
+  h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding-bottom: 8px;
+  }                                                                         
+   
+  h4 {                                                                      
+      font-size: 1.25rem;
+      font-weight: 600;
+      padding-bottom: 8px;
+  }
+
+  h5 {
+      font-size: 1rem;
+      font-weight: 600;
+      padding-bottom: 8px;
+  }
+
+  .bodyCopy {
+      font-size: 1rem;
+      font-weight: 100;
+      color: #484848;
+      padding-bottom: 8px;
+  }
+
+  .caption {
+      font-size: 0.875rem;
+      font-weight: 200;                                                     
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #FC494D;
+      padding-bottom: 8px;                                           
+  }
+  
+  .disclaimer {
+      font-size: 0.75rem;
+      font-weight: 100;
+      color: #484848;
+      padding-bottom: 8px;
+  }
+
+  .pill.pillText {
+    font-size: 0.600rem !important;
+    font-weight: lighter;
+    color: #008CD5 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; 
+  }
+  
+  .btn-blue {
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.875rem;
+    background-color: #008CD5;
+    color: white;
+    border: none;
+}
+
+.text-white {
+    color: white;
+  }                                                                         
+                  
+  .text-dark {                                                              
+    color: #1a1a1a;
+  } 
+
+/* Footer */
+
+#footer {
+  background-color: #008CD5;
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#footer-top h2 {
+  padding: 0;
+}
+
+#footer-top p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#footer-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 15%;
+}
+
+#footer-left h6 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;                                                     
+}
+                                                                            
+#footer-left p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+}                                                                         
+  
+#footer-right {                                                           
+  display: flex;
+  gap: 60px;
+}
+
+#footer-right div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;                                                             
+}
+                                                                            
+.footer-heading {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+}                                                                         
+  
+#footer-right a {                                                         
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.75rem;
+}                                                                         
+  
+#footer-right a:hover {                                                   
+  color: white;
+}
