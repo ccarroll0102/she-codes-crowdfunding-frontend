@@ -1,15 +1,65 @@
 .NavBar nav {
     display: flex;
-    gap: 20px;
-    padding: 16px;
-    margin: 0 0 24px 0;
-    background-color: #f0f0f0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 80px;
+    background-color: #008CD5;
+    position: sticky;
+    top: 0;
 }
+
+.nav-center {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-right{
+    display: flex;
+    gap: 20px;
+}
+
 .NavBar nav a {
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 200;
 }
 .NavBar nav a:hover {
-    color: #007BFF;
-}     
+    color: white;
+}
+
+.NavBar nav a.btn-nav-primary,                                            
+.NavBar nav a.btn-nav-secondary {                                         
+    color: white;                                                         
+}                                                                         
+                  
+.NavBar nav a.btn-nav-primary:hover,
+.NavBar nav a.btn-nav-secondary:hover {
+    color: #008CD5;
+}           
+
+.btn-nav-primary {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-color: #FC494D;
+    color: white;
+    font-size: 0.600rem;
+    border: none;
+}
+
+.btn-nav-secondary {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 0.600rem;
+    border: 1px solid white;
+    transition: background-color 0.2s, color 0.2s;
+}
+.btn-nav-secondary:hover {
+    background-color: white;
+    color: #008CD5;
+}

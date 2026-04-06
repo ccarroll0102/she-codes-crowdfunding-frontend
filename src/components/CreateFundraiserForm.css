@@ -1,0 +1,32 @@
+.startfundraising-card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+    margin: 60px auto;
+}
+
+.startfundraising-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.startfundraising-card label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.startfundraising-card input,
+.startfundraising-card textarea {
+    width: 100%;
+    border: 1px solid #d1d1d1;
+    border-radius: 999px;
+    padding: 10px 16px;
+    outline: none;
+}

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import postSignUp from "../api/post-signup";
+import "./SignUpForm.css";
+import Footer from "./Footer.jsx";
 
 function SignUpForm() {
     const navigate = useNavigate();  
@@ -33,38 +35,39 @@ function SignUpForm() {
     };
 
     return (
-        <form>
-            <div>
-                <label htmlFor="username">Username:</label>
-                <input 
-                type="text"
-                id="username"
-                placeholder = "Enter your username" 
-                onChange={handleChange}
-                />
-            </div>
-            <div>
-                <label htmlFor="email">Email:</label>
-                <input 
-                    type="email" 
-                    id="email" 
-                    placeholder = "Enter your email" 
+        <>
+            <form>
+                <div className="SignUpForm-card">
+                    <h3>Sign Up</h3>
+                    <p className="bodyCopy">Create an account to manage your fundraisers and donations.</p>
+                    <label htmlFor="username">Username:</label>
+                    <input 
+                    type="text"
+                    id="username"
+                    placeholder = "Enter your username" 
                     onChange={handleChange}
-                />
-            </div>
-            <div>
-                <label htmlFor="password">Password:</label>
-                <input 
-                type="password" 
-                id="password" 
-                placeholder = "Enter your password" 
-                onChange={handleChange}
-                />
-            </div>
-            <button type="submit" onClick={handleSubmit}>
-                Sign Up
-            </button>   
-        </form>
+                    />
+                    <label htmlFor="email">Email:</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        placeholder = "Enter your email" 
+                        onChange={handleChange}
+                    />
+                    <label htmlFor="password">Password:</label>
+                    <input 
+                    type="password" 
+                    id="password" 
+                    placeholder = "Enter your password" 
+                    onChange={handleChange}
+                    />
+                    <button className="btn-primary" type="submit" onClick={handleSubmit}>
+                        Sign Up
+                    </button>   
+                </div>
+            </form>
+            <Footer />
+        </>
     );
 }
 

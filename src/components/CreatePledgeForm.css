@@ -1,0 +1,74 @@
+.pledge-form-card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 320px;
+    flex-shrink: 0;
+}
+
+.pledge-form-card h5 {
+    padding: 0;
+}
+
+.preset-amounts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.preset-amounts button {
+    padding: 10px;
+    border-radius: 999px;
+    border: 1px solid #d1d1d1;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.875rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.preset-amounts button:hover,
+.preset-amounts button.selected {
+    background-color: #008CD5;
+    color: white;
+    border-color: #008CD5;
+}
+
+.custom-amount-label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.custom-amount-label input {
+    border: 1px solid #d1d1d1;
+    border-radius: 999px;
+    padding: 10px 16px;
+    outline: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.custom-amount-label textarea {
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    padding: 10px 16px;
+    outline: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.875rem;
+    resize: vertical;
+    min-height: 80px;
+}
+
+.anonymous-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
